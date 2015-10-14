@@ -94,17 +94,18 @@ immutability. </blockquote></p>
 <ul>
 	<li><h4>13:30 - 14:00: Shayan Najd -- Quoted Domain-Specific Languages, an Interesting Spot in the Design Space</h4></li>
 	<li><h4>14:00 - 14:30: Guillaume Allais -- Type and Scope Preserving Semantics</h4>
-	<p><blockquote>We introduce a notion of type and scope preserving semantics generalising Goguen
-and McKinna’s approach to defining one traversal generic enoughto be instantiated
-to renaming first and then substitution. Its careful distinctionof environment and
-model values as well as its variation on a structure typicalof a Kripke semantics
-make it capable of expressing renaming and substitutionbut also various forms of
+	<p><blockquote>
+We introduce a notion of type and scope preserving semantics generalising Goguen
+and McKinna’s approach to defining one traversal generic enough to be instantiated
+to renaming first and then substitution. Its careful distinction of environment and
+model values as well as its variation on a structure typical of a Kripke semantics
+make it capable of expressing renaming and substitution but also various forms of
 Normalisation by Evaluation as well as, perhaps moresurprisingly, monadic computations
 such as a printing function. <br />  <br />
-We then demonstrate that expressing these algorithms in a common frameworkyields
-immediate benefits: we can deploy some logical relations generically overthese
+We then demonstrate that expressing these algorithms in a common framework yields
+immediate benefits: we can deploy some logical relations generically over these
 instances and obtain for instance the fusion lemmas for renaming, substitution
-and normalisation by evaluation as simple corollaries of the appropriatefundamental
+and normalisation by evaluation as simple corollaries of the appropriate fundamental
 lemma. </blockquote></p></li>
 </ul>
 
@@ -141,8 +142,23 @@ values returned by the program, for example, to model the possible
 failure of opening a file. <br /><br /> 
 
 (Joint work with Neil Ghani and Gordon Plotkin.)
-</blockquote>
+</blockquote></p>
 	<li><h4>15:30 - 16:00: Matúš Tejiščák -- Erasure in dependently typed functional languages</h4></li>
+<p><blockquote>In dependently typed languages, we often express algorithms in ways more
+amenable to reasoning. We program with views, turn inductive types into
+indexed families, carefully craft definitions to ensure correctness by
+construction. However, this means that our programs compute with more
+data -- views, proofs, indices -- and they may end up asymptotically
+slower if these extra structures are too big asymptotically, even if
+they shouldn't affect the behaviour of the program at runtime. <br /><br />
+
+In this talk, I will show how Idris recognises and erases this
+runtime-irrelevant data before reaching the code generation stage. Then
+I will describe an improved, type-based erasure scheme, which adds
+features like erasure from higher-order functions or a form of erasure
+polymorphism.
+</blockquote>
+</p>
 </ul>
 
 <h3>16:00 - 16:30: Coffee</h3>
@@ -152,9 +168,15 @@ failure of opening a file. <br /><br />
 	<li><h4>16:30 - 17:00: Charles Grellois -- Linear logic, duality, and higher-order model-checking</h4>
 	<p><blockquote>A common approach in verification, model-checking consists in computing whether a given formula holds on an abstract model of interest -- typically, on a tree of actions representing the set of executions of a program. Over such a tree, a common procedure is to execute an automaton which checks whether an associated formula is satisfied. <br /> <br />
 
-The model-checking of functional programs requires a careful treatment of higher-order recursive computation, which is a major hurdle to the traditional abstraction of programs as finite graphs, and thus to a decidability result. This led to the use of semantic methods, notably in Ong's decidability proof (2006). <br /> <br />
+The model-checking of functional programs requires a careful treatment of higher-order recursive computation, 
+which is a major hurdle to the traditional abstraction of programs as finite graphs, and thus to a decidability result. 
+This led to the use of semantic methods, notably in Ong's decidability proof (2006). <br /> <br />
 
-In this talk, we explain how linear logic leads to a new insight into the higher-order model-checking problem, notably as it discloses very naturally the dual behavior of the program and of its automata-theoretic specification. From this observation, we extend models of linear logic to obtain a purely semantic account of Ong's result: a given property over the set of executions of the program is satisfied if and only if the semantic interaction of the program with the automaton encoding the property of interest contains the initial state of the automaton. <br /> <br />
+In this talk, we explain how linear logic leads to a new insight into the higher-order model-checking problem, 
+notably as it discloses very naturally the dual behavior of the program and of its automata-theoretic specification. 
+From this observation, we extend models of linear logic to obtain a purely semantic account of Ong's result: 
+a given property over the set of executions of the program is satisfied if and only if the semantic interaction of 
+the program with the automaton encoding the property of interest contains the initial state of the automaton. <br /> <br />
 
 This is joint work with my PhD advisor Paul-André Melliès.</blockquote></p></li>
 	<li><h4>17:00 - 17:30: Roly Perera -- Behavioural Prototypes</h4></li>
